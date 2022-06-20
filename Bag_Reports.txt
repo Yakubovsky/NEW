@@ -1,0 +1,10 @@
+ID:1
+Description: Chat removek reqest. Request text in English.
+Prioriti: Low
+Steps:
+1. Click "Chat";
+2. Select "private chat";
+3. Click on the drop-down (v) list to the right of the conrrsct's name;
+4. Click "Delete".
+Actuale result: Text in Russian.
+Expendet result: Text in English.
