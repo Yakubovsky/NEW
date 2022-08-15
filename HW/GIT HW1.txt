@@ -1,0 +1,165 @@
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.  
+$ git config --global user.name "name"
+$ git config --global user.email "email"
+
+ 5. Клонировать репозиторий JSON на локальный компьютер. 
+- $ git clone https://github.com/Yakubovsky/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+- $  touch new.Json
+ 7. Добавить файл под гит.
+-$ git add new.Json
+
+ 8. Закоммитить файл.
+- $ git commit -m "commit test_1">
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+ - $ git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+- $ cat>> new.JSON
+ {
+
+    "about_me": {
+
+        "name": "Yakubovsky Ilya Aleksandrovich",
+
+        "age": "32",
+
+        "pets": "0",
+
+        "salary": "1000"
+
+    }
+
+}
+
+11. Отправить изменения на внешний репозиторий.
+- $ git add, $ git commit -m "edit new.JSON",  $ git push
+
+ 12. Создать файл preferences.json
+- $ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, 
+ любимое время года, сторона которую хотели бы посетить) в формате JSON.
+- $ cat>> preferences.json
+{
+"favorite movie": "Lock, Stock and Two Smoking Barrels",
+"favourite TV show":"game of thrones",
+"favorite food":"fried potato",
+"favorite time of year":"summer",
+"country":"Norway"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+- $ cat>> skills.json
+{
+    "skills": {
+        "skill": [
+            "Attentiveness",
+            "Discipline",
+            "Performance",
+            "Responsibility",
+            "Communicability",
+            "Tact"
+        ]
+    }
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий. 
+- $ git add ., $ git commit -m "new files", $ git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+- $ git push
+ XML
+ 21. Создать внешний репозиторий c названием XML.
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+- $ git clone https://github.com/Yakubovsky/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+- $  touch new.xml
+
+ 24. Добавить файл под гит.
+- $  git add . 
+
+ 25. Закоммитить файл.
+ - $ git commid -m "edit new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+- $ git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+- cat>> new.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Пример XML документа -->
+<about_me>
+	<name>Yakubovsky Ilya Aleksandrovich</name>
+	<age>32</age>
+	<pets>0</pets>
+	<salary>1000</salary>
+</about_me> 
+
+ 28. Отправить изменения на внешний репозиторий.
+- $ git add, $ git commit -m "edit_2 new.xml",  $ git push
+
+ 29. Создать файл preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую
+ хотели бы посетить) в формате XML.
+- $ cat>> preferences.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Пример XML документа -->
+<preferences>
+	<favorite_movie>Lock, Stock and Two Smoking Barrels</favorite_movie>
+	<favorite_show>game of thrones</favorite_show>
+	<favorite_food>fried potato</favorite_food>
+	<favorite_time_of_year>summer</favorite_time_of_year>
+	<country>Norway</country>
+</preferences>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+$ cat> skills.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Пример XML документа -->
+<skills>
+	<skill>Attentiveness</skill>
+	<skill>Discipline</skill>
+	<skill>Performance</skill>
+	<skill>Responsibility</skill>
+	<skill>Communicability</skill>
+	<skill>Tact</skill>
+</skills>
+
+ 32. Сделать коммит в одну строку. 
+- $ git add . 
+- $ git commit -am "adit perferences.xml, skills.xml"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+- $ git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+- $ git pull
